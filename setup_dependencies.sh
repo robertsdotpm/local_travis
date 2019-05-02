@@ -1,5 +1,5 @@
-rvm install 2.4.0
-rvm use 2.4.0
+rvm install 2.3.0
+rvm use 2.3.0
 gem install bundler:1.16.6
 gem install rake -v 12.3.1
 
