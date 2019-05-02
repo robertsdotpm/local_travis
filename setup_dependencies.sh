@@ -11,7 +11,9 @@ cd travis-build
 mkdir -p ~/.travis
 ln -s $PWD ~/.travis/travis-build
 
-cd ~/.travis/travis-build/Gemfile
+cd ~/.travis/travis-build
+bundle update rake
+rm Gemfile.lock
 bundle i
 bundler binstubs travis
 
