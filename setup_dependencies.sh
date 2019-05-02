@@ -19,3 +19,10 @@ ln -s `pwd` /home/travis/.travis/travis-build
 export PATH="$PATH:/home/travis/.rvm/bin"
 bundle install
 
+# Move rune stones again.
+gem install rake
+gem install rake -v 12.3.1
+chmod +x /home/travis/.travis/travis.sh
+/home/travis/.travis/travis.sh
+cd /home/travis/.travis/travis-build
+bundle install
