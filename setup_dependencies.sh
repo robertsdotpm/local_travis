@@ -1,8 +1,6 @@
 rvm install 2.4.0
 rvm use 2.4.0
-gem update --system 
-gem install bundler
-bundle update --bundler
+gem install bundler:1.16.6
 
 cd /home/travis/builds
 git clone https://github.com/travis-ci/travis-build.git
