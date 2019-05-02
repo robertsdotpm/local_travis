@@ -8,7 +8,8 @@ yes Y | travis version
 ln -s `pwd` ~/.travis/travis-build
 bundle install
 gem update --system 
+gem install bundler:1.16.6
 bundler add travis
 gem update --system 
 bundler binstubs travis
-gem update --system 
+gem update --system
