@@ -17,7 +17,7 @@ bundle i
 bundler add travis
 bundler binstubs travis
 yes Y | travis version
-
+bundle install
 
 cd /home/docker/build*
 echo y yes | travis compile > /home/travis/ci.sh; chmod +x /home/travis/ci.sh; /home/travis/ci.sh
