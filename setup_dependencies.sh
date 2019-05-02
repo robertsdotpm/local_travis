@@ -24,5 +24,3 @@ gem install rake
 gem install rake -v 12.3.1
 chmod +x /home/travis/.travis/travis.sh
 /home/travis/.travis/travis.sh
-cd /home/travis/.travis/travis-build
-bundle install
