@@ -9,9 +9,6 @@ gem install travis
 yes Y | travis version
 ln -s `pwd` /home/travis/.travis/travis-build
 
-
-bundler add travis
-bundler binstubs travis
 gem install bundler:1.16.6
 gem install rake -v 12.3.1
 yes Y | travis version
@@ -20,7 +17,6 @@ export PATH="$PATH:/home/travis/.rvm/bin"
 bundle install
 
 # Move rune stones again.
-gem install rake
 gem install rake -v 12.3.1
 chmod +x /home/travis/.travis/travis.sh
 /home/travis/.travis/travis.sh
