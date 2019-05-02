@@ -11,7 +11,8 @@ cd travis-build
 mkdir -p ~/.travis
 ln -s $PWD ~/.travis/travis-build
 
-bundle install --gemfile ~/.travis/travis-build/Gemfile
+cd ~/.travis/travis-build/Gemfile
+bundle i
 bundler binstubs travis
 
 yes Y | travis version
