@@ -11,7 +11,6 @@ yes Y | travis version
 ln -s `pwd` ~/.travis/travis-build
 
 
-export PATH="$PATH:/home/travis/.rvm/bin"
-bundle install
+bundle install --path vendor/cache
 bundler add travis
 bundler binstubs travis
