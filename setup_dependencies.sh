@@ -7,5 +7,8 @@ gem install travis
 yes Y | travis version
 ln -s `pwd` ~/.travis/travis-build
 bundle install
+gem update --system 
 bundler add travis
+gem update --system 
 bundler binstubs travis
+gem update --system 
