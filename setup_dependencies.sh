@@ -10,7 +10,7 @@ gem install travis
 yes Y | travis version
 ln -s `pwd` ~/.travis/travis-build
 
-
-bundle install --path vendor/cache
 bundler add travis
 bundler binstubs travis
+bundle install --path vendor/cache
+
