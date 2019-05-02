@@ -8,9 +8,10 @@ git clone https://github.com/travis-ci/travis-build.git
 cd travis-build
 gem install travis
 yes Y | travis version
-ln -s `pwd` ~/.travis/travis-build
+ln -s `pwd` /home/travis/.travis/travis-build
 
 bundler add travis
 bundler binstubs travis
+yes Y | travis version
 bundle install --path vendor/cache
 
